@@ -1,0 +1,48 @@
+.services {
+  background-color: $light-bg;
+  color: $light-text;
+  padding: 4rem 0;
+
+  .card {
+    @include card-style;
+    background-color: $card-light;
+    color: $light-text;
+    border: none;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      background-color: lighten($card-light, 5%);
+    }
+
+    .btn-add {
+      background-color: $btn-add-light;
+      color: $dark-text;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+
+      &:hover { background-color: #333; color: #fff; }
+    }
+  }
+}
+
+/* Dark Mode Cards */
+body.dark-mode .services {
+  background-color: $dark-bg;
+  color: $dark-text;
+
+  .card {
+    background-color: $card-dark;
+    color: $dark-text;
+
+    .btn-add {
+      background-color: $btn-add-dark;
+      color: $dark-bg;
+
+      &:hover { background-color: lighten($btn-add-dark, 10%); }
+    }
+  }
+}

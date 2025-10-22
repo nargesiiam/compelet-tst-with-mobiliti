@@ -1,0 +1,9 @@
+@mixin transition($prop: all, $time: 0.3s, $type: ease) {
+  transition: $prop $time $type;
+}
+
+@mixin card-style {
+  border-radius: $radius;
+  overflow: hidden;
+  @include transition(transform, 0.3s);
+}

@@ -1,0 +1,54 @@
+body.dark-mode {
+  background-color: $dark-bg;
+  color: $dark-text;
+
+  header {
+    background-color: $dark-bg;
+    color: $dark-text;
+    border-bottom: 1px solid $border-dark;
+
+    nav a {
+      color: $dark-text;
+
+      &:hover { color: lighten($border-dark,10%); }
+    }
+  }
+
+  .services {
+    background-color: $dark-bg;
+    color: $dark-text;
+
+    .card {
+      background-color: $card-dark;
+      color: $dark-text;
+
+      .btn-add {
+        background-color: $btn-add-dark;
+        color: $dark-bg;
+
+        &:hover { background-color: lighten($btn-add-dark,10%); }
+      }
+    }
+  }
+
+  #cart {
+    background-color: $card-dark;
+    color: $dark-text;
+
+    .btn-clear { background-color: $btn-clear-dark; }
+  }
+
+  footer {
+    background-color: $dark-bg;
+    color: $dark-text;
+
+    .mode-btn {
+      background-color: $btn-add-dark;
+      color: $dark-bg;
+
+      &:hover { background-color: lighten($btn-add-dark,10%); }
+    }
+  }
+
+  .carousel-inner { background-color: $dark-bg; }
+}

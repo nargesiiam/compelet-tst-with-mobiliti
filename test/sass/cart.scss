@@ -1,0 +1,40 @@
+#cart {
+  background-color: $card-light;
+  padding: 2rem;
+  border-radius: $radius;
+
+  table { width: 100%; text-align: center; }
+
+  tfoot td { font-weight: bold; }
+
+  .btn-delete {
+    background-color: $btn-delete;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+
+    &:hover { background-color: darken($btn-delete, 10%); }
+  }
+
+  .btn-clear {
+    background-color: $btn-clear-light;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin-top: 10px;
+
+    &:hover { background-color: darken($btn-clear-light, 20%); }
+  }
+}
+
+/* Dark Mode Cart */
+body.dark-mode #cart {
+  background-color: $card-dark;
+  color: $dark-text;
+
+  .btn-clear { background-color: $btn-clear-dark; }
+}

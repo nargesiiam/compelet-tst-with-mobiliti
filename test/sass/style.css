@@ -1,0 +1,241 @@
+header {
+  background-color: #ffffff;
+  color: #212529;
+  border-bottom: 2px solid #ddd;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+}
+header nav a {
+  color: #212529;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+header nav a:hover {
+  color: black;
+}
+
+/* Dark Mode Header */
+body.dark-mode header {
+  background-color: #121212;
+  color: #f8f9fa;
+  border-bottom: 2px solid #444;
+}
+body.dark-mode header nav a {
+  color: #f8f9fa;
+}
+body.dark-mode header nav a:hover {
+  color: rgb(93.5, 93.5, 93.5);
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 80vh;
+}
+.carousel-inner .carousel-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Dark Mode Carousel */
+body.dark-mode .carousel-inner {
+  background-color: #121212;
+}
+
+.services {
+  background-color: #ffffff;
+  color: #212529;
+  padding: 4rem 0;
+}
+.services .card {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  background-color: #f8f9fa;
+  color: #212529;
+  border: none;
+}
+.services .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+.services .card .btn-add {
+  background-color: #000;
+  color: #f8f9fa;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.services .card .btn-add:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Dark Mode Cards */
+body.dark-mode .services {
+  background-color: #121212;
+  color: #f8f9fa;
+}
+body.dark-mode .services .card {
+  background-color: #1e1e1e;
+  color: #f8f9fa;
+}
+body.dark-mode .services .card .btn-add {
+  background-color: #f8f9fa;
+  color: #121212;
+}
+body.dark-mode .services .card .btn-add:hover {
+  background-color: white;
+}
+
+#cart {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+}
+#cart table {
+  width: 100%;
+  text-align: center;
+}
+#cart tfoot td {
+  font-weight: bold;
+}
+#cart .btn-delete {
+  background-color: crimson;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+#cart .btn-delete:hover {
+  background-color: rgb(173.25, 15.75, 47.25);
+}
+#cart .btn-clear {
+  background-color: #666;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+#cart .btn-clear:hover {
+  background-color: #333333;
+}
+
+/* Dark Mode Cart */
+body.dark-mode #cart {
+  background-color: #1e1e1e;
+  color: #f8f9fa;
+}
+body.dark-mode #cart .btn-clear {
+  background-color: #333;
+}
+
+footer {
+  background-color: #ffffff;
+  color: #212529;
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 2px solid #ddd;
+  font-size: 0.9rem;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+footer .mode-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #000;
+  color: #f8f9fa;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+footer .mode-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Dark Mode Footer */
+body.dark-mode footer {
+  background-color: #121212;
+  color: #f8f9fa;
+  border-top: 2px solid #444;
+}
+body.dark-mode footer .mode-btn {
+  background-color: #f8f9fa;
+  color: #121212;
+}
+body.dark-mode footer .mode-btn:hover {
+  background-color: white;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f8f9fa;
+}
+body.dark-mode header {
+  background-color: #121212;
+  color: #f8f9fa;
+  border-bottom: 1px solid #444;
+}
+body.dark-mode header nav a {
+  color: #f8f9fa;
+}
+body.dark-mode header nav a:hover {
+  color: rgb(93.5, 93.5, 93.5);
+}
+body.dark-mode .services {
+  background-color: #121212;
+  color: #f8f9fa;
+}
+body.dark-mode .services .card {
+  background-color: #1e1e1e;
+  color: #f8f9fa;
+}
+body.dark-mode .services .card .btn-add {
+  background-color: #f8f9fa;
+  color: #121212;
+}
+body.dark-mode .services .card .btn-add:hover {
+  background-color: white;
+}
+body.dark-mode #cart {
+  background-color: #1e1e1e;
+  color: #f8f9fa;
+}
+body.dark-mode #cart .btn-clear {
+  background-color: #333;
+}
+body.dark-mode footer {
+  background-color: #121212;
+  color: #f8f9fa;
+}
+body.dark-mode footer .mode-btn {
+  background-color: #f8f9fa;
+  color: #121212;
+}
+body.dark-mode footer .mode-btn:hover {
+  background-color: white;
+}
+body.dark-mode .carousel-inner {
+  background-color: #121212;
+}/*# sourceMappingURL=style.css.map */
